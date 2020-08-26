@@ -1,0 +1,30 @@
+{
+  "name": "kolay-microfront",
+  "version": "1.0.13",
+  "description": "kolay micro-frontend library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolayik/kolay-microfront.git"
+  },
+  "keywords": [
+    "kolayik",
+    "micro-frontend"
+  ],
+  "author": "kolayik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kolayik/kolay-microfront/issues"
+  },
+  "homepage": "https://github.com/kolayik/kolay-microfront#readme",
+  "optionalDependencies": {
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "post-robot": "^10.0.39"
+  }
+}
