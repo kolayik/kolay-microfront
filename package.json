@@ -1,11 +1,11 @@
 {
   "name": "kolay-microfront",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "kolay micro-frontend library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p ."
+    "build": "tsc -p . && cp ./package.json ./lib/package.json"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,6 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "post-robot": "^10.0.39"
+    "post-robot": "^10.0.41"
   }
 }

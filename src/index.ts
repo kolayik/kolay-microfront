@@ -7,6 +7,12 @@ export default class KolayMicrofront {
     };
     return postRobot.send(window.parent, "FreshToken", message);
   }
+  static getInitData(callBack: any) {
+    const message: messageModel = {
+      callBackFn: callBack,
+    };
+    return postRobot.send(window.parent, "GetInitData", message);
+  }
 
   static showModal(data: modalModel, callBack: any): Promise<any> {
     const message: messageModel = {
