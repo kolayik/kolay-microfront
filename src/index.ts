@@ -1,6 +1,12 @@
 import { messageModel, modalModel } from "./modals";
 import * as postRobot from "post-robot";
 export default class KolayMicrofront {
+  static ready(data: { hideHeader: boolean }) {
+    const message: messageModel = {
+      data,
+    };
+    return postRobot.send(window.parent, "Ready", message);
+  }
   static getFreshToken(callBack: any) {
     const message: messageModel = {
       callBackFn: callBack,
@@ -27,6 +33,12 @@ export default class KolayMicrofront {
       data: data,
     };
     return postRobot.send(window.parent, "ShowToast", message);
+  }
+  static startLoading() {
+    return postRobot.send(window.parent, "StartLoading");
+  }
+  static stopLoading() {
+    return postRobot.send(window.parent, "StopLoading");
   }
   static exitApplication() {
     return postRobot.send(window.parent, "ExitApplication");
