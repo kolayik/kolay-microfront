@@ -39,7 +39,7 @@ export default class KolayMicrofront {
     const message: messageModel = {
       data: data,
     };
-    return postRobot.send(window.parent, "goToUrl", message);
+    return postRobot.send(window.parent, "GoToUrl", message);
   }
   static startLoading() {
     return postRobot.send(window.parent, "StartLoading");
