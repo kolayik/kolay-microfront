@@ -1,6 +1,6 @@
 {
   "name": "kolay-microfront",
-  "version": "1.0.14",
+  "version": "1.0.20",
   "description": "kolay micro-frontend library",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,6 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "post-robot": "^10.0.41"
+    "post-robot": "^10.0.42"
   }
 }

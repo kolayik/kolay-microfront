@@ -34,6 +34,13 @@ export default class KolayMicrofront {
     };
     return postRobot.send(window.parent, "ShowToast", message);
   }
+
+  static goToUrl(data: { url: string; openInNewTab: boolean }) {
+    const message: messageModel = {
+      data: data,
+    };
+    return postRobot.send(window.parent, "goToUrl", message);
+  }
   static startLoading() {
     return postRobot.send(window.parent, "StartLoading");
   }
